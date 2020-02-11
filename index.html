@@ -8,7 +8,7 @@
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -55,19 +55,42 @@
       </div>
     </div>
 
-    <!-- Row 2 -->
+    <!-- Row 3 -->
+    <!--Float image left with text wrapping-->
+    <!-- image https://www.hostpapa.com/knowledgebase/align-float-images-website/ -->
     <div class="row">
-      <div class="col-md-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt optio provident tempora amet, eveniet et, eum illum, culpa laborum dicta recusandae magni architecto. Illo saepe facilis, unde. Debitis, atque, doloremque?</p>
+      <div class="col-md-8"><img src = "Assets/humidity_latitude.png" id = "hp_float_image">Lorem ipsum dolor sit
+           amet, consectetur adipisicing elit. Incidunt optio provident 
+           tempora amet, eveniet et, eum illum, culpa laborum dicta 
+           recusandae magni architecto. Illo saepe facilis, unde. 
+           Debitis, atque, doloremque?  Illo saepe facilis, unde. 
+           Debitis, atque, doloremque?  Illo saepe facilis, unde. 
+           Debitis, atque, doloremque?  Illo saepe facilis, unde. 
+           Debitis, atque, doloremque?  Illo saepe facilis, unde. 
+           Debitis, atque, doloremque?  Illo saepe facilis, unde. 
+           Debitis, atque, doloremque?  Illo saepe facilis, unde. 
+           Debitis, atque, doloremque?  Illo saepe facilis, unde. 
+           Debitis, atque, doloremque?
       </div>
-      <div class="col-md-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur itaque, ipsam nihil. Alias, nemo.</p>
+
+      <!-- code for nested rows from -->
+      <!-- https://stackoverflow.com/questions/24659471/nested-rows-with-bootstrap-grid-system -->
+      <div class="col-md-4">
+        <div class="col">
+          <div class="row">
+            <div class="col mini-box">1</div>
+            <div class="col mini-box">2</div>
+          </div>
+          <div class="row">
+            <div class="col mini-box">3</div>
+            <div class="col mini-box">4</div>
+          </div>
       </div>
-      <div class="col-md-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ratione sint ex porro excepturi non dolorum, ullam ea quae vel earum, soluta obcaecati natus. Eligendi iusto accusantium mollitia debitis assumenda!</p>
-      </div>
+      
     </div>
 
+    
+ 
     <!-- Row 3 -->
     <div class="row">
       <div class="col-md-2">

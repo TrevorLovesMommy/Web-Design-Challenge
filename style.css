@@ -1,4 +1,12 @@
 
+/* float text around image */
+#hp_float_image  {
+  float: left;    
+   margin: 0 15px 0 0;
+  }
+
+
+
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
   background: #f1f1f1;
