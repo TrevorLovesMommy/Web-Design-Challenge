@@ -3,7 +3,6 @@
 #hp_float_image  {
     float: left;    
     margin: 0 15px 0 0;
- 
 }
 
 .home_button {
@@ -11,8 +10,81 @@
   color:  white;
   padding:  10px;
   font-size: 25px;
+  font-weight: 500;
 } 
+
+.thumbnail {
+  width: 160px;
+} 
+/*inline thumgnail images */
+/*https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
+/* .inline_thumbnail {
+  float: left;
+  width: 210px;
+
+}  */
+
+
+/*make image fit columns */
+.fit_image{
+  width: 100%;
+  object-fit: cover;
+  }
+
+.inline_thumbnail {
+  display: inline-block;
+  width: 210px;
+} 
+
+
+.thumbnail_border{
+ border-color: #20b2aa;
+ border-width: thin;
+ border-style: solid;
+}
+
+/* Clear floats after image containers - ask TA how to apply this */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  ;
+}
+
+.no_border {
+  border-style: none;
+}
+
+/* img {
+  display:  block;
+  margin-left:  auto;
+  margin-right: auto;
+}  */
 
 h3 {
     color: #20b2aa;
+    padding-top:  30px;
 }
+
+#nav-select {
+  visibility: hidden;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  /* .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  } */
+
+  /* .navbar ul {
+    visibility: hidden;
+  } */
+
+  #nav-select {
+    visibility: visible;
+  }
