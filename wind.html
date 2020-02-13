@@ -21,41 +21,45 @@
   <div class="container">
 
     <!-- Row 1 Nav bar from bootstrap components-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light hamburger">
-      <strong><a class="home_button" class="navbar-brand" href="index.html">Lattitude</a></strong>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="comparison.html">Comparison</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="temperature.html">Temperature</a>
-              <a class="dropdown-item" href="wind.html">Wind</a>
+    <div class=“row”>
+      <div class="col-lg-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <strong><a class="home_button" class ="navbar-brand" href="index.html">Latitude</a></strong>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                    <a class="dropdown-item" href="wind.html">Wind</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+              </ul>
             </div>
-          </li>
-        </ul>
-              <!--code for responsive nav bar-->
+          </nav>
       </div>
-    </nav>
+    </div>
+    <!-- end Row 1 Nav bar -->
 
     <!-- Row 2 -->
     <!--Float image left with text wrapping-->
     <!-- image https://www.hostpapa.com/knowledgebase/align-float-images-website/ -->
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-7">
-        <H3 class = "h3">Summary:  Latitude vs. Humidity</H3>
+        <H3 class = "h3">Summary:  Latitude vs. Wind</H3>
           <img  class="fit_image" src = "Assets/wind_latitude.png" alt = "wind"><p>There doesn't seem to be a strong correlation between wind speed and latitude.  Wind speed tends to range from 0 - 25 mph along all latitudes .</p>
 
       </div>
