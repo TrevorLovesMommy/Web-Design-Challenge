@@ -2,9 +2,8 @@
 <html lang="en-us">
 
 <head>
-
   <meta charset="UTF-8">
-  <title>Latitude Analysis</title>
+  <title>Latitude Analysis:  Temperature</title>
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,11 +13,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 </head>
 
 <body class="css_font">
-
 
   <!-- Creates the Overall Grid -->
   <div class="container">
@@ -49,43 +46,67 @@
             </div>
           </li>
         </ul>
-      <!--code for responsive nav bar-->
-      <select id="nav-select">
-        <option value="home">Home</option>
-        <option value="about">About</option>
-        <option value="portfolio">Portfolio</option>
-        <option value="contact">Contact</option>
-      </select>
+              <!--code for responsive nav bar-->
       </div>
-
-      <div class="clearfix"></div>
-
     </nav>
 
-        <!-- Row 2 -->
+    <!-- Row 2 -->
     <!--Float image left with text wrapping-->
     <!-- image https://www.hostpapa.com/knowledgebase/align-float-images-website/ -->
     <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-7">
-          <H3 class = "h3">Summary:  Latitude vs. X</H3>
-            <img src = "Assets/humidity_latitude.png" alt = "description" id = "hp_float_image">
-             <p>The purpose of this project is to analyze how weather changes as you get closer to the equater.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-             <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included temperature, cloudiness, wind speed and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-        </div>
-  
-        <div class= "col-sm-12 col-md-12 col-lg-5">
-          <H3 class = "h3">Visualizations</H3>
-          <a href = "humidity.html"><img class="inline_thumbnail" src = "Assets/humidity_latitude.png" alt = "Humidity"></a>
-  
-          <a href = "cloudiness.html"><img class="inline_thumbnail" src = "Assets/cloudiness_latitude.png" alt = "Cloudiness"></a>
-  
-          <a href = "temperature.html"><img class="inline_thumbnail" src = "Assets/temp_latitude.png" alt = "Temperature"></a>
-  
-          <a href = "wind.html"><img class="inline_thumbnail" src = "Assets/wind_latitude.png" alt = "Wind"></a>
-        </div>   
+      <div class="col-sm-12 col-md-12 col-lg-7">
+        <H3 class = "h3">Summary:  Latitude vs. Humidity</H3>
+          <img  class="fit_image" src = "Assets/temp_latitude.png" alt = "temperature"><p>As expected, temperature peaks around the equator.  The sun shines directly at the equator, heating the atmosphere there and causing temperatures at the equator to be very warm. The further a location is from the equator, the less sunlight that location receives to heat the atmosphere and thus, the temperature is colder.</p>
+
+          <p>Temperature is not "symmetrical" when you compare the northern hemisphere to the southern hemisphere.  This is because the southern hemisphere has significantly more ocean and much less land.  Water heats up and cools down more slowly than land, so weather tends to be more consistent. The northern hemisphere as more land mass and doesn't get the "heating" effect of the ocean.</p>
       </div>
 
-   
+      <div class= "col-sm-12 col-md-12 col-lg-5">
+        <H3 class = "h3">Visualizations</H3>
+
+            <a href = "humidity.html"><img class="inline_thumbnail" src = "Assets/humidity_latitude.png" alt = "Humidity"></a>
+
+            <a href = "cloudiness.html"><img class="inline_thumbnail" src = "Assets/cloudiness_latitude.png" alt = "Cloudiness"></a>
+
+            <a href = "temperature.html"><img  class="inline_thumbnail thumbnail_border" src = "Assets/temp_latitude.png" alt = "Temperature"></a>
+
+            <a href = "wind.html"><img class="inline_thumbnail" src = "Assets/wind_latitude.png" alt = "Wind"></a>
+      </div>   
+    </div>
+
+ 
+ 
+    <!-- Row 3 -->
+    <!-- <div class="row">
+      <div class="col-md-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-md-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+       </div>
+      <div class="col-md-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      <div class="col-md-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-md-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-md-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div> -->
+
+    <!-- Row 4 -->
+    <!-- <div class="row">
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div> -->
   </div>
 
 </body>

@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Latitude Analysis:  Humidity</title>
+  <title>Latitude Analysis</title>
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -50,7 +50,29 @@
           </li>
         </ul>
               <!--code for responsive nav bar-->
+      <ul id="nav-select">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          Plots
+          <select >
+            <option value="home">Home</option>
+            <option value="about">About</option>
+            <option value="portfolio">Portfolio</option>
+            <option value="contact">Contact</option>
+          </select>
+        </li>
+      </ul>
       </div>
+
+
     </nav>
 
     <!-- Row 2 -->
@@ -58,20 +80,21 @@
     <!-- image https://www.hostpapa.com/knowledgebase/align-float-images-website/ -->
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-7">
-        <H3 class = "h3">Summary:  Latitude vs. Humidity</H3>
-          <img  class="fit_image" src = "Assets/humidity_latitude.png" alt = "description"><p>In this graph, we see humidity tends to be higher in the tropics and declines as one moves poleward.  The air gets relatively drier in southern part of the lower hemisphere versus the northern part of the upper hemisphere.</p>
+        <H3 class = "h3">Summary:  Latitude vs. X</H3>
+          <img src = "Assets/humidity_latitude.png" alt = "description" id = "hp_float_image">
+           <p>The purpose of this project is to analyze how weather changes as you get closer to the equater.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+           <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included temperature, cloudiness, wind speed and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
       </div>
 
       <div class= "col-sm-12 col-md-12 col-lg-5">
         <H3 class = "h3">Visualizations</H3>
+        <a href = "humidity.html"><img class="inline_thumbnail" src = "Assets/humidity_latitude.png" alt = "Humidity"></a>
 
-            <a href = "humidity.html"><img class="inline_thumbnail thumbnail_border" src = "Assets/humidity_latitude.png" alt = "Humidity"></a>
+        <a href = "cloudiness.html"><img class="inline_thumbnail" src = "Assets/cloudiness_latitude.png" alt = "Cloudiness"></a>
 
-            <a href = "cloudiness.html"><img class="inline_thumbnail" src = "Assets/cloudiness_latitude.png" alt = "Cloudiness"></a>
+        <a href = "temperature.html"><img class="inline_thumbnail" src = "Assets/temp_latitude.png" alt = "Temperature"></a>
 
-            <a href = "temperature.html"><img class="inline_thumbnail" src = "Assets/temp_latitude.png" alt = "Temperature"></a>
-
-            <a href = "wind.html"><img class="inline_thumbnail" src = "Assets/wind_latitude.png" alt = "Wind"></a>
+        <a href = "wind.html"><img class="inline_thumbnail" src = "Assets/wind_latitude.png" alt = "Wind"></a>
       </div>   
     </div>
 
