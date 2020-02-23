@@ -14,6 +14,12 @@
     margin: 0 15px 0 0;
 }
 
+.clear_fix::after{
+  content:'';
+  clear:both;
+  display:table
+}
+
 /* center table on data page */
 .center_table{
   margin-left: auto;
